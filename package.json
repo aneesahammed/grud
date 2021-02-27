@@ -1,0 +1,35 @@
+{
+  "name": "grud",
+  "version": "1.0.0",
+  "description": "Simple  JSON data store in GitHub for Node, Electron and the browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aneesahammed/grud.git"
+  },
+  "keywords": [
+    "JSON",
+    "Database",
+    "CRUD",
+    "GitHub",
+    "flat",
+    "file",
+    "storage"
+  ],
+  "author": "Anees Ahammed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aneesahammed/grud/issues"
+  },
+  "homepage": "https://github.com/aneesahammed/grud#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.0",
+    "lodash.find": "^4.6.0",
+    "lodash.findindex": "^4.6.0",
+    "lodash.without": "^4.4.0"
+  }
+}
