@@ -15,7 +15,7 @@
   </a>
 </p>
 
-> Simple  JSON data store in GitHub for Node, Electron and the browser.
+> Simple JSON data store in GitHub for Node, Electron and the browser.
 
 ### 🏠 [Homepage](https://github.com/aneesahammed/grud#readme)
 
@@ -35,10 +35,10 @@ npm run test
 
 👤 **Anees Ahammed**
 
-* Website: https://aneesahammed.github.io/
-* Twitter: [@aneesahammed](https://twitter.com/aneesahammed)
-* Github: [@aneesahammed](https://github.com/aneesahammed)
-* LinkedIn: [@aneesahammed](https://linkedin.com/in/aneesahammed)
+- Website: https://aneesahammed.github.io/
+- Twitter: [@aneesahammed](https://twitter.com/aneesahammed)
+- Github: [@aneesahammed](https://github.com/aneesahammed)
+- LinkedIn: [@aneesahammed](https://linkedin.com/in/aneesahammed)
 
 ## 🤝 Contributing
 
@@ -52,6 +52,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2021 [Anees Ahammed](https://github.com/aneesahammed).<br />
 This project is [MIT](https://github.com/aneesahammed/grud/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
