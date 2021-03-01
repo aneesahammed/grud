@@ -30,11 +30,11 @@ import Grud from "grud";
 
 let config = {
   protocol: "https",           //'http' / 'https' If not passed, defaults to 'https'
-  host: "github.com",          //If not passed, defaults to 'api.github.com' | In case of Enterprise-GitHub e.g github.snapcircle.net.
+  host: "api.github.com",      //If not passed, defaults to 'api.github.com' | In case of Enterprise-GitHub e.g github.snapcircle.net.
   pathPrefix: "",              //leave empty if you are using github.com | In case of Enterprise-GitHub e.g api/v3
   owner: "aneesahammed",       //Your GitHub username
   repo: "my-repo",             //Your repository name where you'd like to have your JSON store hosted
-  path: "db.json",             //data store file
+  path: "db.json",             //any data store file with ext .JSON
   personalAccessToken: "xxxx", //Your personal-access-token with write access
 };
 
@@ -44,7 +44,7 @@ let db = new Grud(config);
 // Create a post
 let post = await db.save(data);
 
-// Read a post
+// Read all posts
 let post = await db.find();
 
 // Query a post
