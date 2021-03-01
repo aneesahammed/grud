@@ -1,6 +1,6 @@
 {
   "name": "grud",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple  JSON data store in GitHub for Node, Electron and the browser.",
   "main": "dist/grud.js",
   "type": "module",
