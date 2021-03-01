@@ -84,7 +84,7 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 Give a ⭐️ if this project helped you!
 
 ## Limits
-**grud** came out from the frequent need of having a database for internal tooling purpose'.<br />
+**grud** came out from the frequent need of having a database for internal tooling purpose.<br />
 So **grud** is a convenient method of storing data without setting up a database server.
 However, if your priority is to have secure/high-performance storage, you should stick to traditional databases like MongoDB.
 
