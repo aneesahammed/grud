@@ -5,7 +5,7 @@
   "main": "dist/grud.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "build": "babel lib --out-dir dist"
   },
   "repository": {
@@ -38,6 +38,8 @@
   "devDependencies": {
     "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.8",
-    "@babel/preset-env": "^7.13.8"
+    "@babel/preset-env": "^7.13.8",
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0"
   }
 }
