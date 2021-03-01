@@ -1,3 +1,5 @@
+import Grud from "./../lib/grud";
+
 describe("grud tests", () => {
   describe("Create records", () => {});
   describe("Read records", () => {});
