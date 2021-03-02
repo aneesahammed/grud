@@ -29,12 +29,12 @@ npm install grud
 import Grud from "grud";
 
 let config = {
-  protocol: "https", //If not passed, defaults to 'https'
-  host: "api.github.com", //If not passed, defaults to 'api.github.com' | In case of Enterprise-GitHub e.g github.snapcircle.net.
-  pathPrefix: "", //Leave empty if you are using github.com | In case of Enterprise-GitHub e.g api/v3
-  owner: "aneesahammed", //Your GitHub username
-  repo: "my-repo", //Your repository name where you'd like to have your JSON store hosted
-  path: "db.json", //Any data store file with ext .JSON
+  protocol: "https",           //If not passed, defaults to 'https'
+  host: "api.github.com",      //If not passed, defaults to 'api.github.com' | In case of Enterprise-GitHub e.g github.snapcircle.net.
+  pathPrefix: "",              //Leave empty if you are using github.com | In case of Enterprise-GitHub e.g api/v3
+  owner: "aneesahammed",       //Your GitHub username
+  repo: "my-repo",             //Your repository name where you'd like to have your JSON store hosted
+  path: "db.json",             //Any data store file with ext .JSON
   personalAccessToken: "xxxx", //Your personal-access-token with write access
 };
 
