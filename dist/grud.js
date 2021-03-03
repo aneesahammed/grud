@@ -105,7 +105,7 @@ var Grud = /*#__PURE__*/function () {
                 });
 
                 if (!responseObj) {
-                  _context.next = 15;
+                  _context.next = 14;
                   break;
                 }
 
@@ -114,28 +114,27 @@ var Grud = /*#__PURE__*/function () {
                   break;
                 }
 
-                console.log((0, _chalk.green)("[auth]->User has been authenticated successfully!"));
+                console.log((0, _chalk.green)("[auth]->User has been authenticated successfully!."));
                 return _context.abrupt("return", true);
 
               case 13:
-                console.log((0, _chalk.red)("[auth][ERR]->, You must have write information to save data!"));
-                return _context.abrupt("return", false);
+                throw new Error("You must have write information to save the data!.");
 
-              case 15:
-                _context.next = 20;
+              case 14:
+                _context.next = 19;
                 break;
 
-              case 17:
-                _context.prev = 17;
+              case 16:
+                _context.prev = 16;
                 _context.t0 = _context["catch"](0);
-                throw Error("[auth][ERR]-> ".concat(_context.t0));
+                throw new Error(_context.t0.message || _context.t0);
 
-              case 20:
+              case 19:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, this, [[0, 17]]);
+        }, _callee, this, [[0, 16]]);
       }));
 
       function auth() {
@@ -275,14 +274,23 @@ var Grud = /*#__PURE__*/function () {
                 file = _context4.sent;
                 collection = (0, _utils.parse)(file.content);
                 index = (0, _findIndex2["default"])(collection, query);
-                collection.splice(index, 1, data);
-                _context4.next = 8;
-                return this._write(collection, file.sha);
 
-              case 8:
+                if (!(index == -1)) {
+                  _context4.next = 7;
+                  break;
+                }
+
                 return _context4.abrupt("return", collection);
 
-              case 9:
+              case 7:
+                collection.splice(index, 1, data);
+                _context4.next = 10;
+                return this._write(collection, file.sha);
+
+              case 10:
+                return _context4.abrupt("return", collection);
+
+              case 11:
               case "end":
                 return _context4.stop();
             }
@@ -332,24 +340,23 @@ var Grud = /*#__PURE__*/function () {
                 return _context5.abrupt("return", records);
 
               case 13:
-                console.log((0, _chalk.red)("[deleteOne][ERR]-> Unable to delete the record, please check the query"));
-                return _context5.abrupt("return", "[deleteOne][ERR]-> Unable to delete the record, please check the query");
+                throw new Error("Unable to delete the record, please check the query.");
 
-              case 15:
-                _context5.next = 20;
+              case 14:
+                _context5.next = 19;
                 break;
 
-              case 17:
-                _context5.prev = 17;
+              case 16:
+                _context5.prev = 16;
                 _context5.t0 = _context5["catch"](0);
-                throw Error("[deleteOne][ERR]-> ".concat(_context5.t0));
+                throw new Error(_context5.t0.message || _context5.t0);
 
-              case 20:
+              case 19:
               case "end":
                 return _context5.stop();
             }
           }
-        }, _callee5, this, [[0, 17]]);
+        }, _callee5, this, [[0, 16]]);
       }));
 
       function deleteOne(_x5) {
@@ -387,30 +394,28 @@ var Grud = /*#__PURE__*/function () {
 
               case 6:
                 response = _context6.sent;
-                console.log((0, _chalk.green)("[_getDataStore][response]->".concat((0, _utils.stringify)(response.data.data.repository.object))));
 
                 if (!(response.status === 200)) {
-                  _context6.next = 10;
+                  _context6.next = 9;
                   break;
                 }
 
                 return _context6.abrupt("return", (0, _utils.parse)((0, _utils.stringify)(response.data.data.repository.object)));
 
-              case 10:
+              case 9:
                 return _context6.abrupt("return", null);
 
-              case 13:
-                _context6.prev = 13;
+              case 12:
+                _context6.prev = 12;
                 _context6.t0 = _context6["catch"](0);
-                console.log((0, _chalk.red)("[ERR]-> ".concat(_context6.t0)));
-                throw Error("[ERR]-> ".concat(_context6.t0));
+                throw new Error(_context6.t0.message || _context6.t0);
 
-              case 17:
+              case 15:
               case "end":
                 return _context6.stop();
             }
           }
-        }, _callee6, this, [[0, 13]]);
+        }, _callee6, this, [[0, 12]]);
       }));
 
       function _getDataStore() {
