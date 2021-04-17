@@ -20,7 +20,7 @@ var _chalk = require("chalk");
 
 var _lodash = _interopRequireDefault(require("lodash.find"));
 
-var _lodash2 = _interopRequireDefault(require("lodash.findIndex"));
+var _lodash2 = _interopRequireDefault(require("lodash.findindex"));
 
 var _lodash3 = _interopRequireDefault(require("lodash.without"));
 

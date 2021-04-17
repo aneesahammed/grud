@@ -31,6 +31,8 @@ npm install grud
 To get started with **grud**, initialize the `db` object by passing the required config.
 
 ```js
+const Grud = require("grud");
+
 let config = {
   protocol: "https",           //If not passed, defaults to 'https'
   host: "api.github.com",      //If not passed, defaults to 'api.github.com' | In case of Enterprise-GitHub e.g github.snapcircle.net.
