@@ -18,11 +18,11 @@ var _axios = _interopRequireDefault(require("axios"));
 
 var _chalk = require("chalk");
 
-var _find3 = _interopRequireDefault(require("lodash/find"));
+var _lodash = _interopRequireDefault(require("lodash.find"));
 
-var _findIndex2 = _interopRequireDefault(require("lodash/findIndex"));
+var _lodash2 = _interopRequireDefault(require("lodash.findIndex"));
 
-var _without2 = _interopRequireDefault(require("lodash/without"));
+var _lodash3 = _interopRequireDefault(require("lodash.without"));
 
 var _utils = require("./utils");
 
@@ -172,7 +172,7 @@ var Grud = /*#__PURE__*/function () {
                 return _context2.abrupt("return", collection);
 
               case 6:
-                return _context2.abrupt("return", (0, _find3["default"])(collection, query));
+                return _context2.abrupt("return", (0, _lodash["default"])(collection, query));
 
               case 7:
               case "end":
@@ -273,7 +273,7 @@ var Grud = /*#__PURE__*/function () {
               case 2:
                 file = _context4.sent;
                 collection = (0, _utils.parse)(file.content);
-                index = (0, _findIndex2["default"])(collection, query);
+                index = (0, _lodash2["default"])(collection, query);
 
                 if (!(index == -1)) {
                   _context4.next = 7;
@@ -325,8 +325,8 @@ var Grud = /*#__PURE__*/function () {
               case 3:
                 file = _context5.sent;
                 collection = (0, _utils.parse)(file.content);
-                index = (0, _findIndex2["default"])(collection, query);
-                records = (0, _without2["default"])(collection, collection[index]);
+                index = (0, _lodash2["default"])(collection, query);
+                records = (0, _lodash3["default"])(collection, collection[index]);
 
                 if (!(index !== -1)) {
                   _context5.next = 13;
