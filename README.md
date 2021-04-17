@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to grud 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.5-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.6-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/aneesahammed/grud#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -15,7 +15,7 @@
   </a>
 </p>
 
-> Simple JSON data store in GitHub with CRUD interface for React, Node, Electron and the browser.
+> Simple JSON data store in GitHub with CRUD interface for React, Node, Electron and the browser.<br/>
 > **grud** is a convenient method of storing & performing read, update & delete operations on data without setting up a database server.
 
 ### 🏠 [Homepage](https://github.com/aneesahammed/grud#readme)
@@ -43,7 +43,7 @@ let config = {
 let db = new Grud(config);
 ```
 
-Create your GitHub personal token from [here](https://github.com/settings/tokens).
+Create your GitHub personal token from [here](https://github.com/settings/tokens).<br/>
 And please note that **grud** will create a new JSON data store file as mentioned in the `config` (db.json in our case) if the file is not found.<br/>
 If the file exists, data shall get appended to the collection array.
 
@@ -108,7 +108,7 @@ const posts = await db.find();
 
 ## Update
 
-Update record by Id or unique identifier
+Update record by Id or unique identifier. <br/>
 The following query finds the `post` record and updates it.
 
 ```js
