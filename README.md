@@ -13,6 +13,9 @@
   <a href="https://twitter.com/aneesahammed" target="_blank">
     <img alt="Twitter: aneesahammed" src="https://img.shields.io/twitter/follow/aneesahammed.svg?style=social" />
   </a>
+  <a href="https://www.npmjs.com/package/grud">
+    <img src="https://img.shields.io/npm/dt/grud.svg" alt="downloads" />
+  </a>
 </p>
 
 > Simple JSON data store in GitHub with CRUD interface for React, Node, Electron and the browser.<br/>
