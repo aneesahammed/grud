@@ -3,7 +3,6 @@
   "version": "1.0.11",
   "description": "Simple  JSON data store in GitHub for Node, Electron and the browser.",
   "main": "dist/grud.js",
-  "type": "module",
   "scripts": {
     "test": "mocha",
     "build": "babel lib --out-dir dist"
